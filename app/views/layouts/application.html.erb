@@ -11,6 +11,22 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= javascript_pack_tag 'turbolinks_audio_stop' %>
+
+    <div class="mobile-side-menu">
+      <button class="navbar-toggler">
+        <%= image_tag 'programming' %>
+      </button>
+    </div>
+
+    <div class="row application_row">
+      <div  class="col-md-3">
+        <%= render 'shared/side_menu' %>
+      </div>
+
+      <div  class="col-md-9">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>

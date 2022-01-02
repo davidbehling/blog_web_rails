@@ -1,0 +1,51 @@
+<div class="mb-4 portfolio container">
+  <div class="col-4 offset-8 background_about mt-3">
+    Sobre
+  </div>
+
+  <div class="about_myself mt-4 text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag 'perfil' %>
+      </div>
+
+      <div class="col-md-8 p-4">
+        <p>
+          Desenvolvedor RubyOnRails há dois anos.
+        </p>
+
+        <p>
+          Conhecimento em banco de dados Postgrees e Mysql.
+        </p>
+
+        <p>
+          Conhecimento em front-end: Javascript, Jquery e React.
+        </p>
+
+        <div class="text-center github_button">
+          <%= link_to "https://github.com/davidbehling" do %>
+            <%= image_tag 'github' %>
+          <% end %>
+
+          <%= link_to "https://www.linkedin.com/in/david-behling-20b66979/" do %>
+            <%= image_tag 'linkedin' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4 background_about mt-4">
+    Galeria
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+    <%= render 'portfolio/space_ship' %>
+  </div>
+
+  <div class="text-center github_button mt-4">
+    <%= link_to "https://github.com/davidbehling?tab=repositories", class: 'btn btn-dark' do %>
+      Veja Mais <%= image_tag 'github' %>
+    <% end %>
+  </div>
+</div>
